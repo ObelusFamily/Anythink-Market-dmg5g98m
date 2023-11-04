@@ -34,6 +34,18 @@ return [
     */
 
     'connections' => [
+        
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'dsn' => env('MONGODB_URI'),
+            'database' => 'laravel_demo',
+        ],
+
+        'mongodb_mflix' => [
+            'driver' => 'mongodb',
+            'dsn' => env('MONGODB_URI'),
+            'database' => 'sample_mflix',
+        ],
 
         'sqlite' => [
             'driver' => 'sqlite',
